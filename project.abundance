@@ -1,14 +1,277 @@
 {
     "atomType": "Molecule",
-    "name": "Cross Section",
+    "name": "Cross-Section",
     "x": 0,
     "y": 0,
     "uniqueID": 1738702202919,
-    "ioValues": [],
+    "ioValues": [
+        {
+            "name": "Geometry",
+            "ioValue": 10
+        },
+        {
+            "name": "Offset",
+            "ioValue": 10
+        },
+        {
+            "name": "Angle X",
+            "ioValue": 10
+        },
+        {
+            "name": "Angle Z",
+            "ioValue": 10
+        },
+        {
+            "name": "Angle Y",
+            "ioValue": 10
+        }
+    ],
     "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
     "topLevel": true,
-    "allAtoms": [],
-    "allConnectors": [],
+    "allAtoms": [
+        {
+            "atomType": "Output",
+            "name": "Output",
+            "x": 0.98,
+            "y": 0.5,
+            "uniqueID": 1738702211980,
+            "ioValues": [
+                {
+                    "name": "number or geometry",
+                    "ioValue": ""
+                }
+            ],
+            "description": "Connect geometry here to make it available in the next level up. "
+        },
+        {
+            "atomType": "Input",
+            "name": "Geometry",
+            "x": 0.04,
+            "y": 0.26740947075208915,
+            "uniqueID": 1738702216119,
+            "ioValues": [],
+            "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
+            "type": "number"
+        },
+        {
+            "atomType": "Input",
+            "name": "Offset",
+            "x": 0.04,
+            "y": 0.40668523676880225,
+            "uniqueID": 1738702227358,
+            "ioValues": [],
+            "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
+            "type": "number"
+        },
+        {
+            "atomType": "Input",
+            "name": "Angle X",
+            "x": 0.04,
+            "y": 0.5487465181058496,
+            "uniqueID": 1738702234286,
+            "ioValues": [],
+            "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
+            "type": "number"
+        },
+        {
+            "atomType": "Input",
+            "name": "Angle Z",
+            "x": 0.04,
+            "y": 0.8579387186629527,
+            "uniqueID": 1738702236103,
+            "ioValues": [],
+            "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
+            "type": "number"
+        },
+        {
+            "atomType": "Input",
+            "name": "Angle Y",
+            "x": 0.04,
+            "y": 0.7047353760445683,
+            "uniqueID": 1738702237720,
+            "ioValues": [],
+            "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
+            "type": "number"
+        },
+        {
+            "atomType": "Rectangle",
+            "name": "Rectangle",
+            "x": 0.1712962962962963,
+            "y": 0.3565459610027855,
+            "uniqueID": 1738702281878,
+            "ioValues": [
+                {
+                    "name": "x length",
+                    "ioValue": 2000
+                },
+                {
+                    "name": "y length",
+                    "ioValue": 2000
+                }
+            ],
+            "description": "Creates a new rectangle."
+        },
+        {
+            "atomType": "Extrude",
+            "name": "Extrude",
+            "x": 0.28240740740740744,
+            "y": 0.48467966573816157,
+            "uniqueID": 1738702298542,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": 1738702281878
+                },
+                {
+                    "name": "height",
+                    "ioValue": 2000
+                }
+            ],
+            "description": "Extrudes a 2D shape. Input can be negitive. "
+        },
+        {
+            "atomType": "Move",
+            "name": "Move",
+            "x": 0.34523809523809523,
+            "y": 0.6713091922005571,
+            "uniqueID": 1738702312365,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": 1738702298542
+                },
+                {
+                    "name": "xDist",
+                    "ioValue": 0
+                },
+                {
+                    "name": "yDist",
+                    "ioValue": 0
+                },
+                {
+                    "name": "zDist",
+                    "ioValue": 10
+                }
+            ],
+            "description": "Moves a shape laterally in X, Y, Z."
+        },
+        {
+            "atomType": "Rotate",
+            "name": "Rotate",
+            "x": 0.40674603174603174,
+            "y": 0.8412256267409471,
+            "uniqueID": 1738702328129,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": 1738702312365
+                },
+                {
+                    "name": "x-axis degrees",
+                    "ioValue": 10
+                },
+                {
+                    "name": "y-axis degrees",
+                    "ioValue": 10
+                },
+                {
+                    "name": "z-axis degrees",
+                    "ioValue": 10
+                }
+            ],
+            "description": "Rotates the input geometry around the X, Y, or Z axis. Inputs are degrees."
+        },
+        {
+            "atomType": "Difference",
+            "name": "Difference",
+            "x": 0.5231481481481481,
+            "y": 0.22284122562674097,
+            "uniqueID": 1738702352977,
+            "ioValues": [
+                {
+                    "name": "geometry2",
+                    "ioValue": 1738702328129
+                },
+                {
+                    "name": "geometry1",
+                    "ioValue": 10
+                }
+            ],
+            "description": "Subtracts shape two from shape one."
+        }
+    ],
+    "allConnectors": [
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "geometry1",
+            "ap2Primary": false,
+            "ap1ID": 1738702216119,
+            "ap2ID": 1738702352977
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "zDist",
+            "ap2Primary": false,
+            "ap1ID": 1738702227358,
+            "ap2ID": 1738702312365
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "x-axis degrees",
+            "ap2Primary": false,
+            "ap1ID": 1738702234286,
+            "ap2ID": 1738702328129
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "z-axis degrees",
+            "ap2Primary": false,
+            "ap1ID": 1738702236103,
+            "ap2ID": 1738702328129
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "y-axis degrees",
+            "ap2Primary": false,
+            "ap1ID": 1738702237720,
+            "ap2ID": 1738702328129
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 1738702281878,
+            "ap2ID": 1738702298542
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 1738702298542,
+            "ap2ID": 1738702312365
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 1738702312365,
+            "ap2ID": 1738702328129
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry2",
+            "ap2Primary": false,
+            "ap1ID": 1738702328129,
+            "ap2ID": 1738702352977
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "number or geometry",
+            "ap2Primary": false,
+            "ap1ID": 1738702352977,
+            "ap2ID": 1738702211980
+        }
+    ],
     "unitsKey": "MM",
     "fileTypeVersion": 1,
     "compiledBom": {},
