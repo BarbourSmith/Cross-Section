@@ -11,19 +11,19 @@
         },
         {
             "name": "Offset",
-            "ioValue": 10
+            "ioValue": 0
         },
         {
             "name": "Angle X",
-            "ioValue": 10
+            "ioValue": 90
         },
         {
             "name": "Angle Z",
-            "ioValue": 10
+            "ioValue": 0
         },
         {
             "name": "Angle Y",
-            "ioValue": 10
+            "ioValue": 0
         }
     ],
     "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -38,7 +38,7 @@
             "ioValues": [
                 {
                     "name": "number or geometry",
-                    "ioValue": ""
+                    "ioValue": 1738702352977
                 }
             ],
             "description": "Connect geometry here to make it available in the next level up. "
@@ -150,7 +150,7 @@
                 },
                 {
                     "name": "zDist",
-                    "ioValue": 10
+                    "ioValue": 0
                 }
             ],
             "description": "Moves a shape laterally in X, Y, Z."
@@ -168,15 +168,15 @@
                 },
                 {
                     "name": "x-axis degrees",
-                    "ioValue": 10
+                    "ioValue": 90
                 },
                 {
                     "name": "y-axis degrees",
-                    "ioValue": 10
+                    "ioValue": 0
                 },
                 {
                     "name": "z-axis degrees",
-                    "ioValue": 10
+                    "ioValue": 0
                 }
             ],
             "description": "Rotates the input geometry around the X, Y, or Z axis. Inputs are degrees."
@@ -274,6 +274,6 @@
     ],
     "unitsKey": "MM",
     "fileTypeVersion": 1,
-    "compiledBom": {},
+    "compiledBom": [],
     "filetypeVersion": 1
 }
